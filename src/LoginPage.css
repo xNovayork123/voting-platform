@@ -1,0 +1,131 @@
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+
+.login-form {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.login-form h2 {
+  margin: 0 0 24px;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #1a1a2e;
+}
+
+.message-box {
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.message-box.error {
+  background: #fdecea;
+  color: #c0392b;
+  border: 1px solid #f5c6cb;
+}
+
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #3498db;
+}
+
+.login-button {
+  width: 100%;
+  padding: 13px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.login-button:hover:not(:disabled) {
+  background: #2980b9;
+}
+
+.login-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.login-sub {
+  color: #888;
+  font-size: 0.88rem;
+  text-align: center;
+  margin: -12px 0 20px;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.88rem;
+  color: #888;
+}
+.register-link button {
+  background: none;
+  border: none;
+  color: #3498db;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+.register-link button:hover { text-decoration: underline; }
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: #ccc;
+  font-size: 0.85rem;
+}
+.divider::before, .divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #e5e7eb;
+}
+.divider span { padding: 0 12px; color: #999; }
+
+.google-btn-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}

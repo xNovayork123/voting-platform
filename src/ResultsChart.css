@@ -1,0 +1,33 @@
+.chart-wrap {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.donut { flex-shrink: 0; }
+.donut-total { font-size: 22px; font-weight: 700; fill: #1a1a2e; }
+.donut-total-label { font-size: 10px; fill: #6b7280; }
+
+.chart-legend {
+  list-style: none;
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+}
+.chart-legend li { display: flex; align-items: center; gap: 8px; font-size: 0.82rem; }
+.legend-dot { width: 11px; height: 11px; border-radius: 3px; flex-shrink: 0; }
+.legend-label { color: #374151; flex: 1; }
+.legend-val { color: #6b7280; font-weight: 600; white-space: nowrap; }
+
+.chart-empty { text-align: center; color: #9ca3af; padding: 8px 0; }
+.donut-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 22px solid #eef2f7;
+  margin: 0 auto 8px;
+}

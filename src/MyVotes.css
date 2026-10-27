@@ -1,0 +1,18 @@
+.myvotes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.myvote-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px 18px;
+}
+.myvote-info { min-width: 0; }
+.myvote-title { font-weight: 700; color: #1a1a2e; }
+.myvote-choice { font-size: 0.85rem; color: #6b7280; margin-top: 4px; }
+.myvote-choice strong { color: #1a56db; }

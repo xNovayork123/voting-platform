@@ -1,0 +1,68 @@
+.suggestions-modal {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.success-box {
+  background: #d1fae5;
+  color: #065f46;
+  border: 1px solid #6ee7b7;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+
+.suggestions-list { display: flex; flex-direction: column; gap: 12px; }
+
+.suggestion-card {
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+}
+.suggestion-card.status-approved { border-color: #6ee7b7; background: #f0fdf4; }
+.suggestion-card.status-rejected { border-color: #fca5a5; background: #fff5f5; }
+
+.suggestion-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+
+.suggestion-title { font-weight: 700; color: #1a1a2e; font-size: 0.95rem; margin-bottom: 4px; }
+.suggestion-by { font-size: 0.8rem; color: #6b7280; margin-bottom: 4px; }
+.suggestion-desc { font-size: 0.85rem; color: #555; margin-bottom: 4px; }
+.suggestion-options { font-size: 0.82rem; color: #6b7280; }
+
+.badge { padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; flex-shrink: 0; }
+.badge-pending { background: #fef3c7; color: #92400e; }
+.badge-approved { background: #d1fae5; color: #065f46; }
+.badge-rejected { background: #fee2e2; color: #991b1b; }
+
+.suggestion-actions { display: flex; gap: 8px; margin-top: 12px; }
+
+.approve-btn {
+  padding: 7px 16px;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.approve-btn:hover { background: #059669; }
+
+.reject-btn {
+  padding: 7px 16px;
+  background: white;
+  color: #e74c3c;
+  border: 1.5px solid #e74c3c;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.reject-btn:hover { background: #fee2e2; }

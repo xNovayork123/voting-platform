@@ -1,0 +1,250 @@
+/* ===== Announcements page ===== */
+.ann-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.ann-main {
+  flex: 1;
+  margin-left: 240px;
+  padding: 32px 40px;
+  max-width: 900px;
+  min-width: 0;
+}
+
+.ann-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+.ann-header h1 {
+  font-size: 1.7rem;
+  margin: 0 0 4px;
+  color: #0f172a;
+}
+.ann-header__sub {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+/* Tabs */
+.ann-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid #e2e8f0;
+}
+.ann-tab {
+  background: none;
+  border: none;
+  padding: 10px 16px;
+  font-size: 0.92rem;
+  color: #64748b;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+.ann-tab:hover { color: #334155; }
+.ann-tab.active {
+  color: #2563eb;
+  border-bottom-color: #2563eb;
+  font-weight: 600;
+}
+
+/* Compose form */
+.ann-compose {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 24px;
+}
+.ann-compose__title {
+  margin: 0 0 18px;
+  font-size: 1.15rem;
+  color: #0f172a;
+}
+.ann-field-row {
+  display: flex;
+  gap: 16px;
+}
+.ann-field-row .ann-field { flex: 1; }
+.ann-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.ann-field > span {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #475569;
+}
+.ann-input,
+.ann-select,
+.ann-textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: #0f172a;
+  background: #fff;
+  box-sizing: border-box;
+}
+.ann-textarea { resize: vertical; }
+.ann-input:focus,
+.ann-select:focus,
+.ann-textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.ann-error {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.88rem;
+  margin-bottom: 14px;
+}
+
+/* Buttons */
+.ann-btn {
+  border: none;
+  border-radius: 9px;
+  padding: 10px 18px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
+.ann-btn--primary {
+  background: #2563eb;
+  color: #fff;
+}
+.ann-btn--primary:hover { background: #1d4ed8; }
+.ann-btn--primary:disabled { opacity: 0.6; cursor: not-allowed; }
+.ann-btn--ghost {
+  background: transparent;
+  color: #2563eb;
+  border: 1px solid #bfdbfe;
+  padding: 7px 14px;
+  margin-top: 10px;
+}
+.ann-btn--ghost:hover { background: #eff6ff; }
+
+/* Lists / cards */
+.ann-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.ann-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 13px;
+  padding: 18px 20px;
+}
+.ann-card--unread {
+  border-color: #bfdbfe;
+  background: #f8fbff;
+}
+.ann-card__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.ann-card__type {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #475569;
+}
+.ann-card__date {
+  font-size: 0.78rem;
+  color: #94a3b8;
+}
+.ann-card__title {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ann-card__body {
+  margin: 0;
+  color: #475569;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+.ann-card__foot {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+.ann-pill {
+  font-size: 0.76rem;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-weight: 600;
+}
+.ann-pill--muted {
+  background: #f1f5f9;
+  color: #64748b;
+}
+.ann-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2563eb;
+  display: inline-block;
+}
+.ann-empty {
+  color: #94a3b8;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 0.95rem;
+}
+
+/* Sidebar badge for unread inbox count */
+.nav-badge {
+  background: #ef4444;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 1px 7px;
+  margin-left: auto;
+}
+
+/* ===== Dark mode ===== */
+[data-theme="dark"] .ann-layout { background: #0f172a; }
+[data-theme="dark"] .ann-header h1 { color: #e2e8f0; }
+[data-theme="dark"] .ann-compose,
+[data-theme="dark"] .ann-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+[data-theme="dark"] .ann-card--unread { background: #1b2a44; border-color: #3b5277; }
+[data-theme="dark"] .ann-compose__title,
+[data-theme="dark"] .ann-card__title { color: #e2e8f0; }
+[data-theme="dark"] .ann-card__body { color: #cbd5e1; }
+[data-theme="dark"] .ann-input,
+[data-theme="dark"] .ann-select,
+[data-theme="dark"] .ann-textarea {
+  background: #0f172a;
+  border-color: #334155;
+  color: #e2e8f0;
+}
+[data-theme="dark"] .ann-tabs { border-bottom-color: #334155; }
+[data-theme="dark"] .ann-pill--muted { background: #334155; color: #cbd5e1; }

@@ -1,0 +1,7 @@
+email,username,password,is_staff,is_superuser,is_active
+ana@test.com,ana,Test1234,false,false,true
+luis@test.com,luis,Test1234,false,false,true
+maria@test.com,maria,Test1234,true,false,true
+ana@test.com,ana_dup,Test1234,false,false,true
+,sinemail,Test1234,false,false,true
+pedro@test.com,pedro,Test1234,false,false,false

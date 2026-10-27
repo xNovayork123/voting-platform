@@ -1,0 +1,6 @@
+title,description,options,category,start_date,end_date,status
+Best Programming Language,Vote for your favourite language,"[""Python"",""JavaScript"",""Rust"",""Go""]",technology,2025-01-01,2025-12-31,open
+Favourite Music Genre,What do you listen to most?,"[""Rock"",""Pop"",""Jazz"",""Classical""]",music,01/06/2025,31/12/2025,OPEN
+Best Programming Language,This is a duplicate title,"[""Python"",""TypeScript""]",technology,2025-01-01,2025-12-31,open
+No Options Ballot,Missing options field,"",general,2025-01-01,2025-12-31,open
+Favourite Sport,Pick your sport,"[""Football"",""Basketball"",""Tennis""]",SPORTS,2025-01-01,2025-12-31,open

@@ -1,0 +1,115 @@
+/* ===== Floating theme toggle button ===== */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  background: #1e293b;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+  z-index: 9998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease;
+}
+.theme-toggle:hover { transform: translateY(-2px); }
+[data-theme="dark"] .theme-toggle { background: #f1f5f9; color: #0f172a; }
+
+/* ===== Dark mode ===== */
+[data-theme="dark"] body { background: #0f172a; }
+
+[data-theme="dark"] .dashboard,
+[data-theme="dark"] .vote-layout { background: #0f172a; }
+
+/* Card / panel surfaces */
+[data-theme="dark"] .stat-card,
+[data-theme="dark"] .section,
+[data-theme="dark"] .ballot-card,
+[data-theme="dark"] .table-wrap,
+[data-theme="dark"] .myvote-row,
+[data-theme="dark"] .create-modal,
+[data-theme="dark"] .suggestion-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+/* Headings + strong text */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] .stat-value,
+[data-theme="dark"] .section-header h2,
+[data-theme="dark"] .ballot-row-title,
+[data-theme="dark"] .card-header h2,
+[data-theme="dark"] .vote-header h1,
+[data-theme="dark"] .myvote-title,
+[data-theme="dark"] .td-title {
+  color: #e2e8f0;
+}
+
+/* Muted text */
+[data-theme="dark"] .header-sub,
+[data-theme="dark"] .stat-label,
+[data-theme="dark"] .ballot-row-options,
+[data-theme="dark"] .card-desc,
+[data-theme="dark"] .td-options,
+[data-theme="dark"] .td-date,
+[data-theme="dark"] .empty-state,
+[data-theme="dark"] .results-title,
+[data-theme="dark"] .myvote-choice,
+[data-theme="dark"] .legend-val,
+[data-theme="dark"] .countdown {
+  color: #94a3b8;
+}
+
+/* Rows + hovers */
+[data-theme="dark"] .ballot-row { background: #243349; border-color: #334155; }
+[data-theme="dark"] .ballot-row:hover { background: #2d3e57; border-color: #3b82f6; }
+[data-theme="dark"] .ballots-table tr:hover td { background: #243349; }
+[data-theme="dark"] .ballots-table th { color: #94a3b8; }
+[data-theme="dark"] .ballots-table td { border-color: #334155; }
+[data-theme="dark"] .ballots-table thead { border-color: #334155; }
+
+/* Results + chart */
+[data-theme="dark"] .results-box { background: #0f172a; }
+[data-theme="dark"] .result-bar-wrap { background: #334155; }
+[data-theme="dark"] .donut-total { fill: #e2e8f0; }
+[data-theme="dark"] .legend-label { color: #cbd5e1; }
+[data-theme="dark"] .donut-placeholder { border-color: #334155; }
+
+/* Inputs / search / chips */
+[data-theme="dark"] .search-input,
+[data-theme="dark"] input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] select {
+  background: #0f172a;
+  color: #e2e8f0;
+  border-color: #334155;
+}
+[data-theme="dark"] .chip { background: #1e293b; color: #94a3b8; border-color: #334155; }
+[data-theme="dark"] .chip-active { background: #4f46e5; color: #fff; border-color: #4f46e5; }
+
+/* Option buttons */
+[data-theme="dark"] .option-btn {
+  background: #1e293b;
+  color: #93c5fd;
+  border-color: #334155;
+}
+[data-theme="dark"] .option-btn:hover:not(:disabled) { background: #1a56db; color: #fff; }
+
+/* Modal labels */
+[data-theme="dark"] .create-modal label,
+[data-theme="dark"] .field-group label { color: #cbd5e1; }
+
+/* category + admin controls in dark mode */
+[data-theme="dark"] .cat-tag { background: #312e81; color: #c7d2fe; }
+[data-theme="dark"] .category-filter { background: #0f172a; color: #e2e8f0; border-color: #334155; }
+[data-theme="dark"] .admin-actions { border-top-color: #334155; }
+[data-theme="dark"] .admin-btn { background: #1e293b; color: #cbd5e1; border-color: #334155; }
+[data-theme="dark"] .admin-btn:hover { background: #243349; }
+[data-theme="dark"] .admin-btn-danger { color: #fca5a5; border-color: #7f1d1d; }

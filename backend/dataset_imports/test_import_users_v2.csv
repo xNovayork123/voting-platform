@@ -1,0 +1,7 @@
+email,username,password,is_staff,is_superuser,is_active
+sofia@test.com,sofi,Test1234,false,false,true
+diego@test.com,dieguito,Test1234,false,false,true
+laura@test.com,laurita,Test1234,true,false,true
+sofia@test.com,sofi_dup,Test1234,false,false,true
+,sin_correo,Test1234,false,false,true
+juan@test.com,juancho,Test1234,false,false,false

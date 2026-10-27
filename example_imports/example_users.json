@@ -1,0 +1,22 @@
+[
+  {
+    "email": "eve@example.com",
+    "username": "eve",
+    "password": "EveSecret1",
+    "is_staff": false,
+    "is_superuser": false,
+    "is_active": true
+  },
+  {
+    "email": "frank@example.com",
+    "username": "frank",
+    "is_active": true
+  },
+  {
+    "email": "grace@example.com",
+    "username": "  Grace  ",
+    "is_staff": true,
+    "is_superuser": false,
+    "is_active": true
+  }
+]

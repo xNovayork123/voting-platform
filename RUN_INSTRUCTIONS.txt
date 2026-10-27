@@ -1,0 +1,24 @@
+
+BACKEND
+1. cd backend
+2. python -m venv venv "C:\Users\emili\AppData\Local\Programs\Python\Python312\python.exe" -m venv venv
+3. venv\Scripts\activate  (Windows)   |   source venv/bin/activate (macOS/Linux)
+4. pip install -r requirements.txt
+5. python manage.py migrate
+6. python manage.py runserver        (serves http://127.0.0.1:8000)
+
+FRONTEND
+1. Open project root
+2. npm install
+3. npm start                          (opens http://localhost:3000)
+
+NOTE ON SESSIONS / COOKIES
+The frontend now calls the API using RELATIVE paths (e.g. /api/ballots/).
+package.json has  "proxy": "http://127.0.0.1:8000"  so the CRA dev server
+forwards /api/* to Django. This keeps the browser on a SINGLE origin
+(localhost:3000), so the Django session cookie is first-party and is sent
+on every request. This is why login + session-protected actions now work.
+
+Do NOT hardcode http://127.0.0.1:8000 in fetch() again: serving the page
+from localhost while calling 127.0.0.1 makes the request cross-site, and a
+SameSite=Lax session cookie is then refused on fetch/XHR.

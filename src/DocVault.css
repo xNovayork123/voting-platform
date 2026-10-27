@@ -1,0 +1,41 @@
+.doc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.doc-grid.list-view {
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 80px 20px;
+  color: #6b7280;
+}
+
+.empty-state h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #1a1a2e;
+}
+
+/* Dark mode overrides for DocVault */
+[data-theme="dark"] .empty-state h3 {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .doc-grid > div {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+}
+
+[data-theme="dark"] .doc-grid p {
+  color: #e2e8f0 !important;
+}
+
+[data-theme="dark"] .doc-grid button {
+  background: #334155 !important;
+  color: #fca5a5 !important;
+}

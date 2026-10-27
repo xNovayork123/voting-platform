@@ -1,0 +1,8 @@
+email,username,password,is_staff,is_superuser,is_active
+alice@example.com,alice,SecurePass1,false,false,true
+bob@example.com,bob,SecurePass2,false,false,true
+admin2@example.com,admin2,AdminPass99,true,true,true
+alice@example.com,alice_dup,Duplicate1,false,false,true
+charlie@example.com,,SecurePass3,false,false,true
+,noEmail,NoEmailPass,false,false,true
+diana@example.com,Diana Smith,SecurePass4,FALSE,FALSE,TRUE
